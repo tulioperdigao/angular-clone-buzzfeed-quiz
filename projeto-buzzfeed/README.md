@@ -1,59 +1,96 @@
-# ProjetoBuzzfeed
+# BuzzFeed Clone (Angular) — Projeto Acadêmico
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.4.
+Um clone minimalista do BuzzFeed, feito com **Angular**, focado em praticar conceitos do framework e lógica de aplicação.  
+A ideia principal é simular a experiência de **quiz** (perguntas + respostas) e exibir um **resultado final** com base nas escolhas do usuário.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🎯 Objetivo do projeto
+
+Este projeto tem como objetivo **aprender e fixar** fundamentos do Angular, como:
+
+- Componentes e organização de projeto
+- Diretivas (`*ngIf`, `*ngFor`)
+- Estruturação de dados para perguntas/respostas
+- Lógica de cálculo do resultado do quiz
+
+---
+
+## ✅ Funcionalidades
+
+- Exibição de perguntas e alternativas
+- Seleção de respostas pelo usuário
+- Cálculo do resultado baseado nas escolhas
+- Exibição do resultado final ao terminar o quiz
+
+---
+
+## 🧱 Tecnologias
+
+- Angular
+- TypeScript
+- HTML
+- CSS
+
+---
+
+## ▶️ Como rodar o projeto
+
+### Pré-requisitos
+
+- Node.js instalado
+- Angular CLI instalado
+
+### Instalação
+
+```bash
+npm install
+```
+
+### Executar em desenvolvimento
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Depois acesse:
 
-## Code scaffolding
+- http://localhost:4200/
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+---
 
-```bash
-ng generate component component-name
-```
+## 📁 Estrutura
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+A estrutura pode variar, mas normalmente segue algo parecido com:
 
-```bash
-ng generate --help
-```
+- `src/app/components/` → componentes do quiz
+- `src/assets/data/` → arquivo com as perguntas/respostas (mock)
+- `src/assets/` → imagens e recursos
 
-## Building
+---
 
-To build the project run:
+## 🧠 Como funciona a lógica do resultado (resumo)
 
-```bash
-ng build
-```
+Uma forma simples de calcular o resultado é:
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+- Cada alternativa aponta para um “tipo”/categoria (ex.: `A`, `B`, `C`)
+- Ao final, o sistema conta qual categoria apareceu mais
+- O resultado exibido é o **mais escolhido**
 
-## Running unit tests
+---
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+## 📷 Preview
 
-```bash
-ng test
-```
+![preview](src/assets/imgs/image.png)
 
-## Running end-to-end tests
+---
 
-For end-to-end (e2e) testing, run:
+## 👤 Autor
 
-```bash
-ng e2e
-```
+**Tulio Castro**  
+LinkedIn: <https://www.linkedin.com/in/tulio-perdigao/>  
+GitHub: <https://github.com/tulioperdigao>
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
-## Additional Resources
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
